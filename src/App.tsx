@@ -1,6 +1,41 @@
+import { useEffect } from "react";
+
 export default function App() {
+  useEffect(() => {
+    const body = document.body;
+
+    const updateBackground = (x: number, y: number) => {
+      body.style.background = `
+        radial-gradient(
+          circle at ${x}px ${y}px,
+          rgba(255, 255, 255, 0.05),
+          #ffffff 600px
+        )
+      `;
+    };
+
+    const onMouseMove = (e: MouseEvent) => {
+      updateBackground(e.clientX, e.clientY);
+    };
+
+    const onTouchMove = (e: TouchEvent) => {
+      if (e.touches.length > 0) {
+        const touch = e.touches[0];
+        updateBackground(touch.clientX, touch.clientY);
+      }
+    };
+
+    window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("touchmove", onTouchMove);
+
+    return () => {
+      window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener("touchmove", onTouchMove);
+    };
+  }, []);
+
   return (
-    <div className="font-inter min-h-screen bg-white text-gray-800">
+    <div className="font-inter min-h-screen bg-white text-gray-800 transition-all duration-300">
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-4 shadow-md">
         <div className="flex flex-col items-start">
@@ -184,7 +219,6 @@ export default function App() {
                   <li>📞 (49) 99817-6691</li>
                   <li>📍 Efapi, Chapecó - SC</li>
                   <li>
-                    📧{" "}
                     <a
                       href="mailto:contato@eskimosorvetes.com.br"
                       className="underline"
