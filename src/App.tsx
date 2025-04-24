@@ -31,6 +31,9 @@ export default function App() {
           className="max-h-60 w-auto object-contain drop-shadow-lg"
         />
       </div>{" "}
+      <div className="animate-pulse rounded-b-lg bg-yellow-400 px-6 py-4 text-center text-xl font-extrabold tracking-wider text-red-800 shadow-md">
+        LIMPA ESTOQUE
+      </div>
       <div className="animate-bounce rounded-b-xl bg-red-600 px-6 py-4 text-center text-white shadow-md">
         <p className="text-lg font-bold">
           🎉 Promoção Especial: Pote de 2L com super desconto! Aproveite agora!
@@ -185,9 +188,7 @@ export default function App() {
                     <a
                       href="mailto:contato@eskimosorvetes.com.br"
                       className="underline"
-                    >
-                      contato@eskimosorvetes.com.br
-                    </a>
+                    ></a>
                   </li>
                 </ul>
               </div>
