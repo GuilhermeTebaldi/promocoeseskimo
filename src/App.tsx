@@ -12,9 +12,6 @@ export default function App() {
         </div>
         <nav className="hidden space-x-6 md:flex"></nav>
         <div className="flex items-center space-x-4">
-          <p className="hidden text-sm font-semibold text-red-600 md:block">
-            (49) 99817-6691
-          </p>
           <a
             href="https://wa.me/5549998176691?text=Quero%20saber%20mais%20sobre%20a%20promoção%20do%20pote%20de%202L%20🍨"
             target="_blank"
@@ -155,6 +152,84 @@ export default function App() {
               </div>
             </div>
           </div>
+          <div className="my-6 flex justify-center">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/jIqrvl72OVk"
+              title="Eskimó Sorvetes - É Verão o Ano Todo"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <footer className="mt-16 bg-red-600 px-6 py-10 text-white">
+            <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
+              {/* Institucional */}
+              <div>
+                <h4 className="mb-3 text-lg font-semibold">Eskimó Sorvetes</h4>
+                <p className="text-sm leading-relaxed">
+                  Atuando em Chapecó com qualidade e sabor. Visite uma de nossas
+                  unidades para aproveitar nossas promoções exclusivas.
+                </p>
+              </div>
+
+              {/* Contato */}
+              <div>
+                <h4 className="mb-3 text-lg font-semibold">Contato</h4>
+                <ul className="space-y-2 text-sm">
+                  <li>📞 (49) 99817-6691</li>
+                  <li>📍 Efapi, Chapecó - SC</li>
+                  <li>
+                    📧{" "}
+                    <a
+                      href="mailto:contato@eskimosorvetes.com.br"
+                      className="underline"
+                    >
+                      contato@eskimosorvetes.com.br
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Redes sociais */}
+              <div>
+                <h4 className="mb-3 text-lg font-semibold">Siga nas redes</h4>
+                <div className="flex space-x-4">
+                  <a
+                    href="https://www.instagram.com/eskimosorveteschapeco"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition hover:opacity-80"
+                  >
+                    <img
+                      src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png"
+                      alt="Instagram"
+                      className="h-6 w-6"
+                    />
+                  </a>
+                  <a
+                    href="https://wa.me/5549998176691"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition hover:opacity-80"
+                  >
+                    <img
+                      src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png"
+                      alt="WhatsApp"
+                      className="h-6 w-6"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Direitos autorais */}
+            <div className="mt-8 border-t border-red-400 pt-4 text-center text-sm text-red-100">
+              © {new Date().getFullYear()} Eskimó Sorvetes - Todos os direitos
+              reservados.
+            </div>
+          </footer>
         </div>
       </section>
     </div>
