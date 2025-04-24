@@ -216,7 +216,6 @@ export default function App() {
               <div>
                 <h4 className="mb-3 text-lg font-semibold">Contato</h4>
                 <ul className="space-y-2 text-sm">
-                  <li>📞 (49) 99817-6691</li>
                   <li>📍 Efapi, Chapecó - SC</li>
                   <li>
                     <a
