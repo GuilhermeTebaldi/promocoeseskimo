@@ -216,7 +216,6 @@ export default function App() {
               <div>
                 <h4 className="mb-3 text-lg font-semibold">Contato</h4>
                 <ul className="space-y-2 text-sm">
-                  <li>📍 Efapi, Chapecó - SC</li>
                   <li>
                     <a
                       href="mailto:contato@eskimosorvetes.com.br"
