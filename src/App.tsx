@@ -25,7 +25,7 @@ export default function App() {
           </a>
         </div>
       </header>
-
+      {/* Promoção em destaque */}
       {/* Imagem de Promoção */}
       <div className="bg-red-0 relative flex justify-center py-10">
         <img
@@ -33,17 +33,26 @@ export default function App() {
           alt="Promoção - Pote de Sorvete"
           className="max-h-60 w-auto object-contain drop-shadow-lg"
         />
+      </div>{" "}
+      <div className="animate-bounce rounded-b-xl bg-red-600 px-6 py-4 text-center text-white shadow-md">
+        <p className="text-lg font-bold">
+          🎉 Promoção Especial: Pote de 2L com super desconto! Aproveite agora!
+          🍨
+        </p>
       </div>
-
       {/* Onde Encontrar */}
       <section id="onde" className="px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <p className="text-sm text-gray-400">
             Efapi, Passo dos Fortes, Palmital
           </p>
-          <h2 className="mb-10 mt-4 text-2xl font-extrabold text-red-600">
-            Somente retirada no local ⚠️​
-          </h2>
+          <div className="my-6 rounded-md border border-red-200 bg-red-50 px-4 py-3 text-center text-red-700">
+            <p className="text-sm font-medium md:text-base">
+              Promoção válida somente para retirada no local — aproveite
+              enquanto durar! 🍦
+            </p>
+          </div>
+
           <h2 className="mb-10 mt-4 text-3xl font-extrabold text-gray-900">
             Onde encontrar nossas unidades em Chapecó
           </h2>
